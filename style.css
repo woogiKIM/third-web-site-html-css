@@ -1,0 +1,524 @@
+
+  body {
+    margin: 0;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  #logo {
+    width: auto;
+    height: 25px;
+  }
+
+  header {
+    background-color: #4c94d7;
+    border-bottom: 2px solid #82BAEF;
+  }
+
+  .flex_container {
+    margin-left: 100px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 500px;
+    height: 80px;
+  }
+  div.flex-item2 > ul > li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+
+  }
+
+  .flex-item2 > ul > li > a:link , :visited {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  }
+  .flex-item2 > ul > li > a:hover {
+    font-style: italic;
+  }
+
+  .flex_container2 {
+    display: inline-block;
+    position: absolute; right: 100px;
+    margin-top: -77px;
+    height: 80px;
+
+  }
+      @media all and (max-width: 1420px){
+        .flex-item3 {
+          visibility: hidden;
+        }
+        .flex_container2{
+          position: absolute; right: 50px;
+        }
+      }
+      @media all and (max-width: 1120px) {
+        .flex_container2 {
+          position: relative; right: 150px;
+          margin-top: 5px;
+        }
+      }
+      @media all and (max-width: 750px) {
+        .flex_container2 {
+          visibility: hidden;
+        }
+      }
+
+  .flex-item3 {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  .flex-item4 {
+    display: inline-block;
+    text-align: right;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+  }
+  fieldset {
+    border: 0;
+  }
+  fieldset input:focus {
+    background-color: #F3F4F5;
+  }
+  div.section1 {
+    width: auto;
+    height: 640px;
+    background-color: #4c94d7;
+
+  }
+  div.intro {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 1080px;
+    margin-top: 240px;
+    z-index: 1;
+
+  }
+  div.intro1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    opacity: 0%;
+    animation: fadein1 1.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+
+  }
+        /*intro1 애니메이션*/
+        @keyframes fadein1 {
+          from {
+            opacity: 0%;
+          }
+          to {
+            opacity: 100%;
+          }
+        }
+
+  div.intro2 {
+    font-size: 18px;
+    font-style: italic;
+    padding: 30px;
+    color: white;
+    opacity: 0%;
+    animation: fadein2 2s;
+    animation-delay: 200ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+  }
+        /*intro2 애니메이션*/
+        @keyframes fadein2 {
+          from {
+            opacity: 0%;
+          }
+          to {
+            opacity: 100%;
+          }
+        }
+
+  div.sign-up-btn {
+    padding-left: 30px;
+    padding-right: 50px;
+    padding-top: 50px;
+    opacity: 0%;
+    animation: fadein3 2s;
+    animation-delay: 500ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+  }
+        /*signup-btn 애니메이션*/
+        @keyframes fadein3 {
+          from{
+            opacity: 0%;
+          }
+          to{
+            opacity: 100%;
+          }
+        }
+  div.sign-up-btn > a {
+    color: blue;
+    font-size: 25px;
+    text-decoration: none;
+    border: 0.5px solid aliceblue;
+    border-radius: 40px;
+    background-color: aliceblue;
+  }
+  div.intro3 {
+    position: relative; left: 450px; bottom: 400px;
+    z-index: -1;
+    opacity: 0%;
+    animation: fadein4 2s;
+    animation-delay: 500ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+  }
+          /*intro3 애니메이션*/
+          @keyframes fadein4 {
+            from{
+              opacity: 0%;
+            }
+            to{
+              opacity: 70%;
+            }
+          }
+
+  div.banner {
+    padding: 40px 0;
+  }
+
+  div.background1 {
+    border: 0px solid red;
+    width: 100%;
+    height: 1000px;
+    background-color: aliceblue;
+  }
+
+
+  div.content1 {
+    width: 1080px;
+    height: 300px;
+    margin: auto;
+    padding: 0;
+    background-color: #fff;
+    -webkit-border-radius: 4px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #D0D0D0;
+    text-align: center;
+    border: 0px solid red;
+  }
+
+  div.c1-1 {
+    border: 0px solid red;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 10px;
+    height: 300px;
+  }
+
+  div.title-c1-1 {
+    float: left;
+    border: 0px solid green;
+    width: 520px;
+    font-size: 20px;
+  }
+
+  div.title-c1-2 {
+    float: right;
+    border: 0px solid black;
+    width: 520px;
+    font-size: 20px;
+  }
+
+  div.c1-1-course {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+  }
+  div.c1-1-course2 {
+    position: absolute;
+    top: 100px;
+    left: 290px;
+  }
+
+  div.c1-2-course {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+  }
+  div.c1-2-course2 {
+    position: absolute;
+    top: 100px;
+    right: 290px;
+  }
+
+  div.c1-1-course > a > sub {
+    color: blue;
+  }
+  div.c1-1 a {
+    color: black;
+  }
+
+    div.content2 {
+      border: 0px solid red;
+      width: 1080px;
+      height: 400px;
+      margin: auto;
+      padding: 0;
+      border-radius: 15px;
+      box-shadow: 2px 2px 2px 2px #d0d0d0;
+      margin-top: 25px;
+      background-color: white;
+      text-align: center;
+    }
+
+    div.c2-1 {
+      background-color: #4c94d7;
+      color: white;
+      text-align: center;
+      margin: auto;
+      padding: 5px;
+      margin-top: 80px;
+      width: 1080px;
+
+
+    }
+    div.c2-2 {
+      text-align: left;
+      padding: 20px;
+      font-weight: bold;
+    }
+
+    div.c2-3-box {
+      border: 0px solid blue;
+      display: inline-block;
+      width: 1020px;
+      height: 320px;
+      padding: 20px;
+    }
+    div.c2-3 {
+      float: left;
+    }
+    div.c2-4 {
+      float: right;
+    }
+    div.c2-5 {
+      float: none;
+    }
+    div.c2-3-box a {
+      color: black;
+    }
+
+
+      div.background2 {
+        border: 0px solid blue;
+        background-image: url(sky-1.png);
+        background-size: 100% 950px;
+        background-attachment: fixed;
+        width: 100%;
+        height: 950px;
+
+      }
+
+      div.banner2 {
+        padding: 60px 0;
+        border: 0px solid green;
+      }
+
+      div.content3 {
+        position: relative;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+        width: 1080px;
+      }
+      div.c3-1-box {
+        border: 0px solid blue;
+        font-size: 1.5em;
+      }
+      div.c3-1-box2 {
+        margin-top: 50px;
+        display: inline-block;
+        border-radius: 40px;
+        background-color: #4c94d7;
+        padding: 1px 10px;
+        font-weight: bold;
+      }
+      div.c3-1-box2 > p > a {
+        text-decoration: none;
+        color: white;
+        font-size: 21px;
+      }
+      div.c3-1-box3 {
+        margin-top: 70px;
+        width: 520px;
+        height: 225px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 2px 2px #D0D0D0;
+        font-weight: bold;
+      }
+      div.c3-1-box3 > h1 {
+        background-color: #4c94d7;
+        color: white;
+        padding: 10px;
+        border-radius: 15px 15px 0px 0px;
+      }
+      div.c3-1-box4 {
+        position: absolute;
+        bottom: 00px;
+        left: 560px;
+        width: 520px;
+        height: 225px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 2px 2px #D0D0D0;
+        font-weight: bold;
+      }
+      div.c3-1-box4 > h1 {
+        margin: 0px;
+        background-color: #4c94d7;
+        color: white;
+        padding: 10px;
+        border-radius: 15px 15px 0px 0px;
+      }
+      /* c3-1-box3과 수평 정렬 = position 사용으로 인한 margin값 일치를 위한 값*/
+      div.c3-1-box4 > p:nth-child(2) {
+        margin-top: 19.92px;
+      }
+
+
+
+          div.background3 {
+            border: 0px solid red;
+            width: 100%;
+            height: 100%;
+
+          }
+
+          div.content4 {
+            position: relative;
+            text-align: center;
+            margin: auto;
+            padding: 0;
+            width: 100%;
+            border: 0px solid blue;
+          }
+
+          div.c4-1-box {
+            border: 0px solid red;
+            font-size: 40px;
+            font-weight: bold;
+            padding: 100px;
+
+          }
+
+          div.c4-2-box > nav > ul {
+            padding: 0;
+            background-color: #4c94d7;
+            text-align: center;
+          }
+          div.c4-2-box > nav > ul > li {
+            list-style: none;
+            font-size: 20px;
+            font-weight: bold;
+            display: inline-block;
+            padding: 20px 30px;
+            margin-left: 5px;
+            margin-right: 5px;
+            border: 0px solid black;
+            color: white;
+          }
+
+          div.c4-2-box > nav > ul > li:hover {
+            color: aliceblue;
+            font-style: italic;
+            padding: 10px 30px;
+          }
+          div.c4-3 > p {
+            padding: 80px;
+            font-size: 18px;
+            font-style: italic;
+            font-weight: bold;
+            color: blue;
+          }
+          div.c4-3 > a {
+            padding: 0px;
+            border: 0px solid red;
+            display: inline-block;
+            margin: 20px;
+          }
+          div.c4-3 > a > figure > figcaption {
+            font-weight: bold;
+            font-size: 14px;
+            color: blue;
+          }
+          div.c4-3 > a > figure > figcaption > q {
+            font-size: 18px;
+            color: black;
+          }
+          div.c4-3 > a > figure > figcaption > q:hover {
+            font-style: italic;
+            text-decoration: underline;
+          }
+
+              /*Footer 시작*/
+              footer.footer {
+                position: relative;
+                width: 100%;
+                height: 230px;
+                margin: auto;
+                color: white;
+                background-color: #343D52;
+                color: aliceblue;
+              }
+
+              div.footer-box1 {
+                width: 1080px;
+                height: 230px;
+                margin: auto;
+              }
+              div.footer-box1 a {
+                text-decoration: none;
+                font-weight: bold;
+
+              }
+              div.footer-logo {
+                position: absolute;
+                top: 145px;
+                left: 1700px;
+              }
+              div.footer-box1 > p {
+                padding-top: 40px;
+                margin-bottom: 30px;
+                font-weight: bold;
+              }
+              div.footer-box2 {
+                font-size: 20px;
+                text-align: right;
+                padding: 0;
+                margin: 0;
+                padding-top: 5px;
+              }
+              div.footer-box2 > a {
+                padding-right: 5px;
+              }
+              div.move-top {
+                position: absolute;
+                top:50px;
+                left: 1735px;
+                font-size: 40px;
+              }
+              div.move-top > a {
+                color: white;
+              }
